@@ -1,0 +1,177 @@
+.slider {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    /* background-color: lightblue; */
+}
+
+.slider .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1, .slide2, .slide3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(../image/slide1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 32s infinite;
+    -webkit-animation: fade 32s infinite;
+}
+
+.slide2 {
+    background: url(../image/slide2.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 32s infinite;
+    -webkit-animation: fade2 32s infinite;
+}
+
+.slide3 {
+    background: url(../image/slide3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 32s infinite;
+    -webkit-animation: fade3 32s infinite;
+}
+
+/* overlay */
+.slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: rgba(15, 73, 132, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider .overlay .content-overlay {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    color: #fff;
+}
+
+.content-overlay .left {
+    width: 50%;
+}
+
+.content-overlay .left h3 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: .4px;
+    color: rgb(252, 123, 2);
+    font-family: 'Holtwood One SC', serif;
+    padding: 0 16px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.content-overlay .left h1 {
+    font-size: 50px;
+    letter-spacing: .4px;
+    color: #fff;
+    padding: 0 16px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Concert One', cursive;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-overlay .left .pesan {
+    background: rgba(254, 196, 16,.3);
+    /* background: rgba(32,65,127,.5); */
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-overlay .left .pesan p {
+    width: 70%;
+}
+
+.content-overlay .left .pesan span i {
+    font-size: 100px;
+    font-weight: 200;
+}
+
+.content-overlay .right a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
+/* .content-overlay .right a:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition-duration: .2s;
+    margin: 20px 0;
+} */
+
+.content-overlay .right a:hover {
+    background-color: rgba(251, 101, 66, 1);
+    border-color: rgba(251, 101, 66, 1);
+    transition-duration: .4s;
+}
+
+.slider .overlay .footer-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(251, 101, 66, 1);
+    /* background: #375e97; */
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.slider .overlay .footer-overlay a {
+    color: inherit;
+}
+
+
+
+@keyframes fade {
+    0% {opacity: 1;}
+    33.333% {opacity: 0;}
+    66.666% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade2 {
+    0% {opacity: 0;}
+    33.333% {opacity: 1;}
+    66.666% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade3 {
+    0% {opacity: 0;}
+    33.333% {opacity: 0;}
+    66.666% {opacity: 1;}
+    100% {opacity: 0;}
+}

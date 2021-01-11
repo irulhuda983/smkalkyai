@@ -1,0 +1,167 @@
+li.nav-item a.nav-link.page-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    /* background: #5533ff; */
+    background: rgba(255, 255, 255, 0.3);
+    /* background: linear-gradient(95deg, rgba(85, 51, 255, .1) 40%, rgba(37, 221, 245, .1) 100%) !important; */
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    /* padding: 5px; */
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+    border-bottom: 4px solid rgba(37, 221, 245, 1);
+}
+
+p.info {
+    /* background-color: rgb(62, 207, 142); */
+    background: linear-gradient(95deg, rgba(85, 51, 255, .8) 40%, rgba(37, 221, 245, .8) 100%) !important;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(96, 94, 94, 0.17) 0px 8px 9px 0px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* overlay */
+.transparan {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.transparan .footer-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(95deg, rgba(85, 51, 255, 1) 40%, rgba(37, 221, 245, 1) 100%) !important;
+    z-index: 99;
+}
+
+.footer-overlay .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sosmed {
+    width: 260px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.sosmed a {
+    cursor: pointer;
+    color: inherit;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.contact {
+    color: #fff;
+}
+
+.contact a {
+    color: #fff;
+    font-size: 12px;
+}
+
+/* slider */
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    /* background-color: lightblue; */
+}
+
+.slider .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(../img/slide/slide1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 32s infinite;
+    -webkit-animation: fade 32s infinite;
+}
+
+.slide2 {
+    background: url(../img/slide/slide2.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 32s infinite;
+    -webkit-animation: fade2 32s infinite;
+}
+
+.slide3 {
+    background: url(../img/slide/slide3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 32s infinite;
+    -webkit-animation: fade3 32s infinite;
+}
+
+.slide4 {
+    background: url(../img/slide/slide4.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade4 32s infinite;
+    -webkit-animation: fade4 32s infinite;
+}
+
+/* blog */
+#blog h2 {
+    text-align: left;
+    color: #3ecf8e;
+    line-height: 1.5em;
+    border-bottom: 3px solid rgba(85, 51, 255, 1);
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade2 {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade3 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade4 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}

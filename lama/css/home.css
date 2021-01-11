@@ -1,0 +1,83 @@
+.pendaftaran {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* background: rgba(251, 101, 66, 0.7); */
+    /* background: rgba(55, 94, 151, 0.3); */
+    /* background: url(../image/bg-ppdb.svg) no-repeat right; */
+}
+
+.pendaftaran .ilustrasi {
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.pendaftaran .ilustrasi img {
+    width: 100%;
+}
+
+
+.pendaftaran .box-ppdb {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px 100px 20px 20px;
+}
+
+.pendaftaran .box-ppdb h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    color: rgb(252, 123, 2);
+    /* color: rgba(55, 94, 151, 1); */
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+
+/* info
+    berita
+    agenda
+*/
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.info .berita {
+    width: 66%;
+    padding: 20px 80px;
+    /* padding-left: 80px; */
+}
+
+.info .agenda {
+    width: 33%;
+    padding: 20px 80px;
+}
+
+.list-agenda {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.list-agenda .tanggal {
+    border-left: 5px solid rgba(251, 101, 66, 1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(251, 101, 66, 1) 0%, rgba(255, 187, 0, 1)  100% );
+    color: #fff;
+}
+
+.list-agenda .isi-agenda {
+    height: 100%;
+}
